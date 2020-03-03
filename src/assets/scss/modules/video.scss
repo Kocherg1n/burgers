@@ -1,0 +1,10 @@
+.video {
+  background-image: url("/assets/img/bg/bg-video.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__player {
+    margin-top: 40px;
+  }
+}

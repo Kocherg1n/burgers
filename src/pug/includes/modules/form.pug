@@ -1,0 +1,51 @@
+form(id="form").form
+    .form__col
+        .form__row
+            label.form__label
+                .form__label-title Имя
+                input.form__input(type='text', name='name')
+            label.form__label
+                .form__label-title Телефон
+                input.form__input(type='tel', name='phone')
+        .form__row
+            label.form__label
+                .form__label-title Улица
+                input.form__input(type='text')
+        .form__row
+            .form__row
+                label.form__label
+                    .form__label-title Дом
+                    input.form__input(type='text')
+                label.form__label
+                    .form__label-title Корпус
+                    input.form__input(type='text')
+                label.form__label
+                    .form__label-title Квартира
+                    input.form__input(type='text')
+                label.form__label
+                    .form__label-title Этаж
+                    input.form__input(type='text')
+    .form__col
+        .form__row
+            label.form__label
+                .form__label-title Комментарий
+                textarea.form__input.form__textarea(name='comment')
+        .form__row
+            .form__label.form__label-radio
+                label.form__question
+                    input.form__input-radio(name='pay-conf', type='radio')
+                    span.radio-btn
+                    .form__label-title Потребуется сдача
+                label.form__question
+                    input.form__input-radio(name='pay-conf', checked='', type='radio')
+                    span.radio-btn
+                    .form__label-title Оплата по карте
+        .form__row
+            label.form__label.form__label-checkbox
+                input.form__checkbox(type='checkbox', checked='')
+                span.checkbox
+                .form__label-title Не перезванивать
+        .form__row
+            .form__button
+                button.main-button.main-button--form(type='submit') Заказать
+                button.main-button.main-button--color--black(type='reset') Очистить

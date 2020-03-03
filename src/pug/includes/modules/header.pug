@@ -1,3 +1,12 @@
-header
-  .container
-    span header
+header.header.header__container
+    .header__logo
+        svg.header__logo
+            use(xlink:href='../../../assets/img/icons/sprite.svg#logo')
+    .header__nav
+        include ./nav
+    .header__wrapper
+        .header__button
+            button.main-button(type="button" id="order") Заказать
+        .header__hamburger
+            include ./hamburger-btn
+

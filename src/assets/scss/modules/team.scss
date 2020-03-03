@@ -1,0 +1,23 @@
+.team {
+  background-image: url("/assets/img/bg/bg-team.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__dark-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    @include phone {
+      width: 100%;
+    }
+  }
+}

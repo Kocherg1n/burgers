@@ -1,0 +1,46 @@
+.nav {
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 30px;
+    position: relative;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:after {
+      content: "";
+      width: 4px;
+      height: 4px;
+      background: $white;
+      border-radius: 50%;
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -15px;
+    }
+
+    &:first-child:after {
+      display: none;
+    }
+
+  }
+
+  &__link {
+    font-family: $mainFontMedium;
+    text-transform: uppercase;
+    color: $white;
+    font-size: rem($mainFontSize);
+
+    &:hover {
+      color: $orange;
+      transition: $speed;
+    }
+  }
+
+}

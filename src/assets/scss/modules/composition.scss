@@ -1,0 +1,88 @@
+.composition {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: rem(90);
+  height: rem(90);
+  background-color: #e35028;
+  border-radius: rem(5);
+  opacity: 0.4;
+  transition: opacity .3s;
+  color: $white;
+
+  &__drop-table {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    background: rgba(255, 255, 255, 1);
+    padding: rem(10);
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+
+  &__btn {
+    width: rem(46);
+    height: rem(44);
+  }
+
+  &__title {
+    font-family: $secondFont;
+    margin-top: rem(4);
+  }
+
+  &__list {
+    display: table;
+    padding: rem(10);
+    color: $black;
+  }
+
+  &__elem {
+    display: table-row;
+  }
+
+  &__icon-pic {
+    width: rem(44);
+    height: rem(40);
+  }
+
+  &__icon,
+  &__text,
+  &__weght {
+    display: table-cell;
+    vertical-align: middle;
+    height: rem(50);
+    padding: rem(8);
+  }
+
+  &__text {
+    padding: rem(5) rem(50) rem(10) rem(10);
+    text-align: left;
+  }
+
+  &__weght {
+    text-align: right;
+  }
+
+  &:hover .composition__drop-table {
+    left: 100%;
+    opacity: .9;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @include tablet {
+    top: 0;
+    left: 10%;
+  }
+
+  @include phone {
+    left: 0;
+  }
+}
+

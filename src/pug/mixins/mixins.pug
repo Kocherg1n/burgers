@@ -1,0 +1,22 @@
+//mixin icon(name, className)
+//    - var icon = require(`../../assets/img/icons/${name}.svg`);
+//    svg(class=className viewBox=icon.viewBox preserveAspectRatio="none")
+//        use(xlink:href=icon.url)
+
+
+mixin image(path, className, description, attrRole)
+    if role
+        img(src=require(`../../assets/img/${path}`) class=className role= attrRole)
+    else
+        img(src=require(`../../assets/img/${path}`) class=className alt=description)
+
+
+mixin nav(className, items, href)
+    - var link = ["#single", "#slider", "#team", "#menu", "#reviews", "#video", "#contacts", "#order"];
+    nav(class=`${className}`)
+        ul(class=`${className}__list`)
+            each item, index in items
+                li(class=`${className}__item`)
+                    a(href=`${link[index]}` class=`${className}__link`)= item
+
+

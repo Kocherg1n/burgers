@@ -1,0 +1,51 @@
+.single {
+  background-image: url("/assets/img/bg/bg-single.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__content {
+    display: flex;
+    align-items: center;
+
+    @include laptop {
+      flex-direction: column;
+    }
+  }
+
+  &__content-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content-img {
+    //max-width: 100%;
+    //max-height: 100%;
+  }
+
+  &__content-desc {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    justify-content: center;
+
+    @include laptop {
+      text-align: center;
+      margin-top: rem(20);
+    }
+  }
+
+  &__title {
+    color: $orange;
+    line-height: 1;
+  }
+
+  &__subtitle {
+    color: $white;
+    font-family: $thirdFont;
+    margin-top: 15px;
+  }
+}
+

@@ -1,1 +1,44 @@
-// header style
+.header {
+  min-height: 80px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 100%;
+
+  &__container {
+    width: 95%;
+    max-width: 940px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: rem(92);
+    height: rem(69);
+  }
+
+  &__nav {
+
+    @include laptop {
+      display: none;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__hamburger {
+    display: none;
+
+    @include laptop {
+      display: block;
+      margin-left: 20px;
+    }
+  }
+}
+
+

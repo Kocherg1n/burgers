@@ -1,0 +1,186 @@
+
+.form {
+  display: flex;
+
+  @include tablet {
+    flex-direction: column;
+    padding: 4% 4% 4% 4%;
+  }
+
+  &__row {
+    display: flex;
+  }
+
+  &__label {
+    margin-left: rem(19);
+    width: 100%;
+
+    @include phone {
+      &:nth-child(4) {
+        display: none;
+      }
+    }
+
+    &-radio {
+      display: flex;
+
+      @include phone {
+        display: flex;
+        justify-content: center;
+        margin-top: rem(10);
+      }
+    }
+
+    &-checkbox {
+      display: flex;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__label-checkbox {
+    margin-top: rem(18);
+
+    @include phone {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__col {
+    width: 50%;
+    margin-top: rem(45);
+    margin-left: rem(20);
+
+    @include tablet {
+      margin-left: 0;
+      width: 100%;
+      margin-top: 0;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__checkbox {
+    margin-right: rem(10);
+  }
+
+  &__textarea {
+    min-height: rem(122);
+    resize: none;
+
+    @include tablet {
+      min-height: rem(90);
+    }
+
+    @include phone {
+      min-height: rem(50);
+    }
+  }
+
+  &__question {
+    display: flex;
+    position: relative;
+  }
+
+  &__label-title {
+    font-family: $mainFont;
+    font-size: rem(14);
+    font-weight: 300;
+    color: $white;
+    padding-bottom: rem(7);
+    margin-right: rem(20);
+  }
+
+  &__input {
+    border: rem(2) solid transparent;
+    border-radius: rem(4);
+    padding: rem(11) rem(21);
+    margin-bottom: rem(20);
+    outline: none;
+    width: 100%;
+
+    @include phone {
+      margin-bottom: rem(12);
+    }
+
+    &:focus {
+      border-color: $orange;
+    }
+
+    &-radio {
+      margin-right: rem(10);
+    }
+  }
+
+  &__button {
+    margin-top: rem(19);
+
+    @include phone {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+
+// radio & checkbox style
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox {
+  display: block;
+  width: rem(15);
+  height: rem(15);
+  background-color: #ffffff;
+  border-radius: rem(2);
+  position: relative;
+  margin-right: rem(10);
+}
+
+.form__checkbox:checked + .checkbox:before {
+  content: "";
+  display: block;
+  width: rem(8);
+  height: rem(4);
+  position: absolute;
+  border-radius: rem(2);
+  left: rem(2);
+  top: rem(3);
+  border-left: rem(4) solid #e35028;
+  border-bottom: rem(4) solid #e35028;
+  transform: rotate(-45deg);
+}
+
+.radio-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: rem(15);
+  height: rem(15);
+  background-color: $white;
+  border-radius: 50%;
+  position: relative;
+  margin-right: rem(10);
+}
+
+.form__input-radio:checked + .radio-btn::before {
+  content: "";
+  display: block;
+  width: rem(7);
+  height: rem(7);
+  position: absolute;
+  background-color: #e35028;
+  border-radius: 50%;
+}

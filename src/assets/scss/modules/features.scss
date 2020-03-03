@@ -1,0 +1,57 @@
+.features {
+  background-image: url("/assets/img/bg/bg-features.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__content {
+    color: $black;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(50);
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    text-align: center;
+
+    @include tablet {
+      padding: 0 10%;
+    }
+
+    @include phone {
+      display: flex;
+      padding: 0;
+    }
+
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-pic {
+      width: rem(110);
+      height: rem(90);
+    }
+  }
+
+  &__title {
+    font-family: $thirdFont;
+    font-size: rem(32);
+    margin-top: rem(20);
+
+  }
+
+  &__text {
+    margin-top: rem(20);
+  }
+}
+

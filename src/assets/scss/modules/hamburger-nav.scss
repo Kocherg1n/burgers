@@ -1,0 +1,67 @@
+.hamburger-nav {
+  display: flex;
+
+  &__wrapper {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: $black;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item:after {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: $white;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  &__item {
+    margin-top: 10px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__item:last-child::after {
+    display: none;
+  }
+
+  &__link {
+    color: $white;
+    font-family: $mainFont;
+    font-size: rem(28);
+    text-transform: uppercase;
+  }
+
+  &__link:hover {
+    color: $orange;
+    transition: $speed;
+  }
+}
+
+// Classes js-action
+
+.active {
+  display: flex;
+}
+
+.overflow {
+  overflow: hidden;
+}

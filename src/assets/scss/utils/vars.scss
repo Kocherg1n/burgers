@@ -1,24 +1,32 @@
 // Font
-$mainFont                : 'Montserrat', Helvetica, Arial, sans-serif;
+$mainFont                : 'Ubuntu-Regular', Helvetica, Arial, sans-serif;
+$mainFontLight           : 'Ubuntu-Light', Helvetica, Arial, sans-serif;
+$mainFontMedium          : 'Ubuntu-Medium', Helvetica, Arial, sans-serif;
+$mainFontBold            : 'Ubuntu-Bold', Helvetica, Arial, sans-serif;
+$secondFont              : 'Gagalin-Regular', Helvetica, Arial, sans-serif;
+$thirdFont               : 'Lifehack-Medium', Helvetica, Arial, sans-serif;
+
+// Resolutions
+$phone                   : 480px;
+$tablet                  : 768px;
+$laptop                  : 992px;
+$desktop                 : 1200px;
 
 // Size
 $mainFontColor           : #101010;
-$mainFontSize            : 18px;
+$mainFontSize            : 14px;
+$titleFontSize           : 72px;
 $mainFontWeight          : 400;
 $mainLineHeight          : 1.4;
-
-$desktopWidth            : 1280px;
-$smDesktopWidth          : 980px;
-$tableWidth              : 768px;
-$phoneWidth              : 480px;
-$smPhoneWidth            : 320px;
+$speed                   : 0.3s;
 
 // Main color
-$default-color           : #ffffff;
+$white                   : #ffffff;
+$black                   : #2f3234;
+$orange                  : #f9b43b;
+$red                     : #e45028;
 $primary-color           : #444ce0;
 $success-color           : #26de81;
-$danger-color            : #fc5c65;
-$warning-color           : #fed330;
 $light-color             : #999999;
 $purple-color            : #8854d0;
 
