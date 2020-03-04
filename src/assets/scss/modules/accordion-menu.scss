@@ -1,0 +1,76 @@
+.accordion-menu {
+
+  &__list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+  }
+
+  &__item {
+    height: 100%;
+    display: flex;
+
+    &--active {
+      .accordion-menu__description {
+        width: rem(300);
+        transition: .1s;
+
+        @include phone {
+          width: 100%;
+        }
+      }
+
+      .accordion-menu__trigger-text {
+        color: #f9b43b;
+      }
+
+      .accordion-menu__description-text {
+        color: $white;
+        display: flex;
+      }
+    }
+  }
+
+  &__trigger {
+    cursor: pointer;
+    padding-bottom: rem(40);
+
+    &:before {
+      content: "";
+      position: absolute;
+      background: rgba(0, 0, 0, .9);
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+
+    display: flex;
+    justify-content: center;
+    width: rem(80px);
+    text-decoration: none;
+    position: relative;
+  }
+
+
+  &__trigger-text {
+    color: #fff;
+    writing-mode: tb;
+    transform: rotate(180deg);
+    font-size: rem(40px);
+    padding-bottom: 40px;
+  }
+
+  &__description {
+    width: 0;
+    color: $white;
+    background: rgba(0, 0, 0, .8);
+  }
+
+  &__description-text {
+    color: transparent;
+    display: none;
+  }
+}

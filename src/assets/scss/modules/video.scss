@@ -4,7 +4,28 @@
   background-position: center;
   background-size: cover;
 
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 6%;
+  }
+
   &__player {
     margin-top: 40px;
+
+    @include tablet {
+      width: 100%;
+    }
+
+    @include phone {
+      width: 300px;
+    }
+  }
+
+  &__pic {
+    margin-top: rem(50);
   }
 }

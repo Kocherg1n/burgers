@@ -1,9 +1,8 @@
 .footer {
-  position: absolute;
   background: $black;
   width: 100%;
-  bottom: 0;
   min-height: 60px;
+  padding: 5px 0;
 
   &__container {
     display: flex;

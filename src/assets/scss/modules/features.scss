@@ -27,7 +27,9 @@
 
     @include phone {
       display: flex;
+      flex-direction: column;
       padding: 0;
+      margin-top: rem(10);
     }
 
   }

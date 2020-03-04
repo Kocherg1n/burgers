@@ -1,10 +1,7 @@
 // JS
-import './js/hamburger'
-import './js/accordion-team'
+import './js/index'
 
 // SCSS
 import './assets/scss/main.scss'
-
-
 
 

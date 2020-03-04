@@ -66,6 +66,10 @@
     @include tablet {
       text-align: center;
     }
+
+    @include phone {
+      width: 100%;
+    }
   }
 
   &__img {

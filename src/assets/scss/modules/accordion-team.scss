@@ -1,43 +1,80 @@
 .accordion-team {
+  padding: 0 25%;
+  margin-top: rem(30);
+  cursor: pointer;
+
+  @include tablet {
+    padding: 0 5%;
+  }
+
+  @include phone {
+    padding: 0 5%;
+  }
 
   &__list {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   &__item {
+    margin-top: rem(40);
 
+    &--active .accordion-team__block {
+      height: 100%;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   &__name {
+    font-family: $secondFont;
 
+    @include phone {
+      text-align: center;
+    }
   }
 
   &__block {
-    display: none;
+    display: flex;
+    height: 0;
+    overflow: hidden;
+    margin-top: rem(20);
 
-    &--active {
-      display: flex;
+    @include phone {
+      flex-direction: column;
     }
   }
 
   &__avatar {
-
+    margin-right: rem(15);
   }
 
   &__avatar-pic {
-
+    max-width: 100px;
   }
 
   &__desc {
-
+    font-family: $mainFontBold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   &__position {
-
+    @include phone {
+      margin-top: rem(10);
+    }
   }
 
   &__text {
-
+    font-family: $mainFont;
+    @include phone {
+      margin-top: rem(10);
+    }
   }
 
 }
