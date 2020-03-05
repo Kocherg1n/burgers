@@ -58,9 +58,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "fullpage.js": "^3.0.8",
     "vue": "^2.6.10",
-    "vue-carousel": "^0.18.0",
     "vue-flickity": "^1.2.1"
   }
 }

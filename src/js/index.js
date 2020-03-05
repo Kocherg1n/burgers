@@ -5,4 +5,3 @@ import './accordion-menu'
 import './overlay-reviews'
 import './flickity-carousel'
 import './scrollTo'
-
