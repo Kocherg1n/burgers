@@ -5,8 +5,8 @@ header.header.header__container
     .header__nav
         include ./nav
     .header__wrapper
-        .header__button
-            button.main-button(type="button" id="order") Заказать
+        a.header__button.nav__link(href="#order")
+            button.main-button(type="button") Заказать
         .header__hamburger
             include ./hamburger-btn
 
