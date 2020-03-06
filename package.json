@@ -1,7 +1,7 @@
 {
-  "name": "Burgers",
+  "name": "webpacktemplate",
   "version": "1.0.0",
-  "description": "Burgers landing",
+  "description": "My template + pug",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --config ./build/webpack.dev.conf.js",
@@ -15,6 +15,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kocherg1n/burgers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vedees/webpack-template-pug/issues"
   },
   "keywords": [
     "webpack",
@@ -59,3 +62,4 @@
     "vue-flickity": "^1.2.1"
   }
 }
+
